@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family:   roobert,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,helvetica,arial,sans-serif,bitrefill,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","ChiKareGo2";
+
+}
+
+header a img{
+    width: 14px;
+    pointer-events: fill;
+}
+ 
+header .container{
+    background-color: rgba(78, 74, 74, 0.103);
+    display: flex;
+    padding: 7px;
+     justify-content: space-between;
+     position: fixed;
+     width: 100%;
+}
+
+header a{
+     
+    font-size: 10px;
+    margin: 5px;
+    text-decoration: none;
+     color: white;
+     font-weight: bold;
+     text-shadow: 2px 2px 4px black;
+
+}
+
+header a:hover{
+    color: rgba(141, 137, 137, 0.466);
+
+}
+
+#hero{
+    
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),
+         rgba(0,0,0,0.5)
+
+      )
+        ,url("https://library.sportingnews.com/styles/crop_style_16_9_mobile_2x/s3/2022-01/kobe-bryant_17bpuateg64li1xrmth7brqvrk.jpg?itok=hK0Ei2VB");
+        background-position: center center;
+        background-size: cover;
+        text-align: center;
+        
+       
+
+    height: 91vh;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+
+   
+}
+
+#hero h2{
+    padding-top: 50px;
+    text-shadow: 2px 2px 4px black;
+
+}
+
+#hero p{
+    padding: 40px;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+}
+
+#sobre-nosotros{
+    height: 400px;
+    background-image:linear-gradient(
+        0deg,
+         rgba(0,0,0,0.5),
+         rgba(0,0,0,0.5)
+
+      )
+        , url("https://i.ytimg.com/vi/-mwaLB0SR34/maxresdefault.jpg") ;
+    background-position: center center;
+    background-size: cover;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+#sobre-nosotros h2{
+    padding-top: 100px;
+}
+#sobre-nosotros p{
+    padding-top: 20px;
+}
+
+
+
+
+#footer {
+    font-size: 10px;
+    width: 100%;
+    background-color: #0a141d;
+    text-align: center;
+    
+}
+
+#footer .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+     padding: 30px 0px; 
+    grid-gap: 5px;
+    text-align: center;
+   
+}
+
+.box img{
+    width: 100px;
+}
+
+.grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+#footer .box h2{
+    color: white;
+     margin-bottom: 10px;
+ 
+}
+
+#footer .box p{
+    color: #efefef ;
+}
+
+
+
+.red-social a{
+    
+    padding-top: 10px;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    color: #efefef;
+    background-color: #0d2033;
+
+}
+
+.fa-facebook:hover{
+    color: #3b5998;
+}
+
+.fa-twitter:hover{
+    color: #00acee;
+}
+
+.fa-instagram:hover{
+ color: #C13584;
+}
+
+.grupo-2{
+ 
+    padding: 15px 10px;
+    color: white;
+    background-color: #011a2a;
+}
+
+.grupo-2 small
+{
+    font-size: 9px;
+}
+
+@media screen and (max-width:600px){
+
+     #footer .grupo-1{
+          color: #C13584;
+         width: 100%;
+         grid-template-columns: 1fr;
+         padding: 35px 3px ; 
+         grid-gap: 30px;
+         text-align: center;
+    
+    }
+
+    #footer .grupo-2{
+          
+      
+
+       }
+}
+
+@media screen and (max-width:343px){
+    header{
+        justify-content: center;
+    }
+    header .container{
+        flex-direction: column;
+          justify-content: center;
+           background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7) ) ,url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/800px-Los_Angeles_Lakers_logo.svg.png");
+           background-size: cover;
+           background-position: center center;
+          position: static;
+           border-bottom: 2px black;
+    }
+
+    header nav{
+        display: flex;
+     flex-direction: column;
+     
+     align-items: center;
+     margin-bottom: 2px black;
+
+    }
+    .container a{
+        padding: 2px;
+        display: flex;
+     justify-content: center;
+     
+    }
+
+    #hero{
+        padding-top: 120px;
+    }
+}
+
